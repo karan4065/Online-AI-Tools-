@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import {Edit, SquarePen} from 'lucide-react'
-
 import axios from 'axios'
 import { useAuth } from '@clerk/clerk-react';
 import toast from 'react-hot-toast';

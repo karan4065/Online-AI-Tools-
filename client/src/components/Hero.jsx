@@ -1,6 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { assets } from '../assets/assets'
 import { useClerk } from '@clerk/clerk-react'
 
 const Hero = () => {
