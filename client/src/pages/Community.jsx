@@ -17,7 +17,7 @@ const Community = () => {
 
   const fetchCreations = async ()=>{
     try {
-      const {data} = await axios.get('/api/user/get-published-creations',{headers:{Authorization: `Bearer ${await getToken()}`}
+      const {data} = await axios.get('https://online-ai-tools-1.onrender.com/api/user/get-published-creations',{headers:{Authorization: `Bearer ${await getToken()}`}
     })
 
       if(data.success){
@@ -33,7 +33,7 @@ const Community = () => {
 
   const imageLikeToggle = async(id)=>{
     try {
-       const {data} = await axios.post('/api/user/toggle-like-creation', {id},{headers:{Authorization: `Bearer ${await getToken()}`}
+       const {data} = await axios.post('https://online-ai-tools-1.onrender.com/api/user/toggle-like-creation', {id},{headers:{Authorization: `Bearer ${await getToken()}`}
     })
     if(data.success){
           toast.success(data.message)
@@ -49,7 +49,7 @@ const Community = () => {
 
 const handleDelete = async (id) => {
   try {
-    const { data } = await axios.delete('/api/user/delete-creation', {
+    const { data } = await axios.delete('https://online-ai-tools-1.onrender.com/api/user/delete-creation', {
       headers: {
         Authorization: `Bearer ${await getToken()}`
       },

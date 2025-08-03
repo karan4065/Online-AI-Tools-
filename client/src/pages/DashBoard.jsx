@@ -18,7 +18,7 @@ const DashBoard = () => {
 
   const getDashboardData = async()=>{
     try {
-      const {data} = await axios.get('/api/user/get-user-creations',{headers:{Authorization: `Bearer ${await getToken()}`}
+      const {data} = await axios.get('https://online-ai-tools-1.onrender.com/api/user/get-user-creations',{headers:{Authorization: `Bearer ${await getToken()}`}
     })
     if(data.success){
         setCreations(data.creations)

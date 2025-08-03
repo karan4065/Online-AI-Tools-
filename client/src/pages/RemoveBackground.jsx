@@ -22,7 +22,7 @@ const Removebackground = () => {
           const formData = new FormData()
           formData.append('image',input)
 
-          const {data} = await axios.post('/api/ai/remove-image-background',formData ,{headers:{
+          const {data} = await axios.post('https://online-ai-tools-1.onrender.com/api/ai/remove-image-background',formData ,{headers:{
           Authorization: `Bearer ${await getToken()}`
         }})
 
