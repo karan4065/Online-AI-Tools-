@@ -11,6 +11,7 @@ import RemoveObject from './pages/RemoveObject'
 import ReviewResume from './pages/ReviewResume'
 import Community from './pages/Community'
 import {Toaster} from 'react-hot-toast'
+import Contact from './pages/Contact'
 
  const App = () => {
 
@@ -24,6 +25,7 @@ import {Toaster} from 'react-hot-toast'
               <Route path='write-article' element={<WriteArticle/>} />
               <Route path='blog-titles' element={<BlogTitles/>} />
               <Route path='generate-images' element={<GenerateImages/>} />
+              <Route path='contact-page' element={<Contact/>} />
               <Route path='remove-background' element={<RemoveBackground/>} />
               <Route path='remove-object' element={<RemoveObject/>} />
               <Route path='review-resume' element={<ReviewResume/>} />
